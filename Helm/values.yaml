@@ -2,8 +2,8 @@
 #namespace: devops
 replicaCount: 1
 image:
-  repository: naresh2603/helmrocket
-  tag: v1
+  repository: vprpurushoth/porus24
+  tag: V3
 containerPort: 80
 # service.yaml
 service:
