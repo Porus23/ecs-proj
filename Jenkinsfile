@@ -4,7 +4,8 @@ pipeline {
         stage ('SCM checkout') {
             steps {
                 script{
-                     git credentialsId: 'git-cred', url: 'https://github.com/naresh26git/helm-node.git'
+                     git credentialsId: 'git-cred', url: 'https://github.com/Porus23/ecs-proj.git'
+                    
                 }
             }
         }
@@ -28,7 +29,8 @@ pipeline {
         stage('Docker Build Images') {
             steps {
                 script {
-                    sh 'docker build -t naresh2603/helm-rocket:v1 .'
+                    sh 'docker build -t porus24/rocket-appV3
+ .'
                     sh 'docker images'
                 }
             }
